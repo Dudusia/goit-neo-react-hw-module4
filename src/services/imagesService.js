@@ -8,7 +8,7 @@ export const fetchImages = async (searchTopic, currentPage = 1) => {
       per_page: 30,
     },
     headers: {
-      Authorization: 'Client-ID yp2JPl58ckqyuG5ywZlsD0VxSZuEdIT_Y9AHEKQ8SM4',
+      Authorization: `Client-ID ${import.meta.env.VITE_UNSPLASH_ACCESS_ID}`,
     },
   });
 

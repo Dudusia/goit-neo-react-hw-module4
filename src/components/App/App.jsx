@@ -4,7 +4,7 @@ import ImageGallery from '../ImageGallery/ImageGallery';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
 import ImageModal from '../ImageModal/ImageModal';
-import { ClipLoader } from 'react-spinners';
+import Loader from '../Loader/Loader';
 import { fetchImages } from '../../services/imagesService';
 import { useState, useEffect } from 'react';
 
@@ -64,7 +64,7 @@ const App = () => {
       {images.length > 0 && (
         <ImageGallery images={images} handleClick={handleImageSelect} />
       )}
-      {isLoading && <ClipLoader />}
+      {isLoading && <Loader />}
       {isError && <ErrorMessage />}
       {images.length > 0 && !isLoading && (
         <LoadMoreBtn handleClick={changePage} />

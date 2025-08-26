@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  margin: 20px auto 0; /* Centers the button horizontally and adds space above */
+  padding: 12px 24px;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Focus style for accessibility */
+}

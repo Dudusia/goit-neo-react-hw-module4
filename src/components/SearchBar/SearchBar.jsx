@@ -1,4 +1,4 @@
-// import css from "./SearchBar.module.css";
+import css from './SearchBar.module.css';
 import { Toaster } from 'react-hot-toast';
 import toast from 'react-hot-toast';
 
@@ -12,14 +12,15 @@ const SearchBar = ({ onSearch }) => {
     onSearch(topic);
   };
 
+
   return (
     <header>
       <div>
         <Toaster position="top-center" reverseOrder={false} />
       </div>
-      <form action={handleSubmit}>
+      <form action={handleSubmit} className={css.form}>
         <input
-          className="input"
+          className={css.input}
           type="text"
           autoComplete="off"
           autoFocus
